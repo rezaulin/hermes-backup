@@ -1,0 +1,4 @@
+# Never commit real secrets
+.env
+auth.json
+*.lock
