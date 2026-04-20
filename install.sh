@@ -104,6 +104,22 @@ WRAPPER
     fi
 fi
 
+# ─── 8. Auth setup ───
+echo ""
+echo "🔐 Auth setup..."
+if [ -f "$BACKUP_DIR/profiles/auth.json.template" ]; then
+    echo "  ℹ️  Auth pakai provider OAuth (token expire)"
+    echo "  ℹ️  Setelah install, jalankan:"
+    echo ""
+    echo "    hermes login"
+    echo ""
+    echo "  Atau kalau pakai API key, edit ~/.hermes/.env:"
+    echo "    ANTHROPIC_API_KEY=sk-..."
+    echo "    OPENAI_API_KEY=sk-..."
+    echo "    XAI_API_KEY=xai-..."
+    echo ""
+fi
+
 # ─── Done ───
 echo ""
 echo "============================================"
@@ -111,8 +127,9 @@ echo "  ✅ Setup complete!"
 echo "============================================"
 echo ""
 echo "  Next steps:"
-echo "  1. Edit ~/.hermes/.env — fill in API keys"
-echo "  2. Run: hermes"
+echo "  1. Edit ~/.hermes/.env — fill in API keys (jika perlu)"
+echo "  2. Login: hermes login"
+echo "  3. Run: hermes"
 echo ""
 echo "  To update backup later:"
 echo "  cd ~/hermes-backup && bash update.sh && git push"

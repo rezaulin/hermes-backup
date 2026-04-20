@@ -1,0 +1,12 @@
+{
+  "_comment": "Auth template — tokens expire, run 'hermes login' to regenerate",
+  "_active_provider": "nous",
+  "_supported_providers": ["nous", "anthropic", "openai", "xai", "copilot"],
+  "_notes": {
+    "nous": "OAuth flow via portal.nousresearch.com — run 'hermes login'",
+    "anthropic": "Set ANTHROPIC_API_KEY in ~/.hermes/.env",
+    "openai": "Set OPENAI_API_KEY in ~/.hermes/.env",
+    "xai": "Set XAI_API_KEY in ~/.hermes/.env",
+    "copilot": "Set COPILOT_GITHUB_TOKEN in ~/.hermes/.env"
+  }
+}
