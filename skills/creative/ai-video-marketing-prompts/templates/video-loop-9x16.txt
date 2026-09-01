@@ -1,0 +1,34 @@
+Generate a 10-second SEAMLESS-LOOP fashion marketing video in
+VERTICAL 9:16 format from this storyboard.
+
+Motion direction — one continuous 360° cycle that returns exactly
+to the starting frame:
+- Model performs a flowing dance routine that begins and ends in
+  the SAME pose and position
+- One complete smooth spin during the video, showing the outfit
+  from every angle
+- Movement flows naturally between panels with no hard cuts —
+  the energy is continuous
+- Fabric physics: cloth moves naturally with each motion, catching
+  light on every turn
+
+Seamless loop requirements:
+- Frame 0 (first frame) and final frame MUST be IDENTICAL —
+  same pose, angle, position, lighting
+- Motion velocity at loop point must be ZERO or matching —
+  no visible jump, pause, or acceleration spike at the seam
+- Background and lighting static/consistent across the full 10s
+
+Camera:
+- Subtle push-in on close-up detail panel, smooth tracking on spins
+- Camera returns to starting position by final frame
+- Never obstructs the clothing — product always visible
+
+Constraints:
+- NO dialogue, NO voiceover, NO narration, NO on-screen text
+- Music-driven energy (upbeat tempo implied by movement)
+- Garment design, color, details 100% consistent across all frames
+- No morphing artifacts, no flicker at loop point
+
+Style: premium fashion campaign, cinematic lighting, vertical
+9:16 social media format (TikTok/Reels/Shorts ready).

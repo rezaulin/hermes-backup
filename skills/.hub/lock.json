@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "installed": {
+    "godmode": {
+      "source": "official",
+      "identifier": "official/security/godmode",
+      "trust_level": "builtin",
+      "scan_verdict": "dangerous",
+      "content_hash": "sha256:eb452f29db50e629",
+      "install_path": "security/godmode",
+      "files": [
+        "SKILL.md",
+        "references/jailbreak-templates.md",
+        "references/refusal-detection.md",
+        "scripts/parseltongue.py",
+        "scripts/load_godmode.py",
+        "scripts/auto_jailbreak.py",
+        "scripts/godmode_race.py",
+        "templates/prefill-subtle.json",
+        "templates/prefill.json"
+      ],
+      "metadata": {},
+      "installed_at": "2026-08-28T01:41:17.337761+00:00",
+      "updated_at": "2026-08-28T01:41:17.337768+00:00"
+    }
+  }
+}

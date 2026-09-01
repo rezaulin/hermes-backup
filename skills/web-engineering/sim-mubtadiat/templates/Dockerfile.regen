@@ -1,0 +1,28 @@
+# SIM Mubtadiat — one-off Go tool runner image (batch regen / verifier scripts).
+# WHY: the deployed app image is alpine WITHOUT a Go toolchain, so
+# `docker compose run app go run ...` fails with "go: not found", and the host
+# may not have Go either. This builds the script from source in a golang stage
+# and ships just the binary.
+#
+# Usage:
+#   cp this file to /opt/simmubtadiat/Dockerfile.regen (adjust ENTRYPOINT target)
+#   .dockerignore must NOT exclude the script dir — the repo has `tmp_*`,
+#   so add a negation line (e.g. `!tmp_batch_regen`) after it.
+#   docker build -f Dockerfile.regen -t sim-regen:latest .
+#   source .env && docker run --rm --network simmubtadiat_default \
+#     -e DB_HOST=db -e DB_PORT=5432 \
+#     -e DB_USER=... -e DB_PASS=... -e DB_NAME=... sim-regen:latest
+#
+# Go version must be >= the directive in go.mod (currently go 1.26.x).
+# GOMAXPROCS=1 + -p 1 keep this small-RAM VPS from OOMing during compile.
+FROM golang:1.26-alpine AS builder
+WORKDIR /app
+COPY go.mod go.sum ./
+RUN go mod download
+COPY . .
+RUN GOMAXPROCS=1 go build -p 1 -o regen-bin ./tmp_batch_regen
+
+FROM alpine:latest
+WORKDIR /app
+COPY --from=builder /app/regen-bin .
+ENTRYPOINT ["/app/regen-bin"]

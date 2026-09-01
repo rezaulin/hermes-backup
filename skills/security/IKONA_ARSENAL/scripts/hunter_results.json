@@ -1,0 +1,412 @@
+{
+  "target": "https://juice-shop.herokuapp.com",
+  "generated": "2026-08-23T12:23:30",
+  "findings": [
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/.git/config accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/.git/config"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/.git/HEAD accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/.git/HEAD"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/.git/refs/heads/master accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/.git/refs/heads/master"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/.env accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/.env"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/.env.local accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/.env.local"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/.env.production accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/.env.production"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/.env.backup accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/.env.backup"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/.env.dev accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/.env.dev"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/.env.staging accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/.env.staging"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/.env.example accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/.env.example"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/backup.zip accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/backup.zip"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/backup.tar.gz accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/backup.tar.gz"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/backup.sql accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/backup.sql"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/db.sqlite3 accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/db.sqlite3"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/database.sql accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/database.sql"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/dump.sql accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/dump.sql"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/dump.db accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/dump.db"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/data.sql accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/data.sql"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/users.sql accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/users.sql"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/.bash_history accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/.bash_history"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/.DS_Store accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/.DS_Store"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/web.config accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/web.config"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/.htaccess accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/.htaccess"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/config.php accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/config.php"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/config.js accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/config.js"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/config.json accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/config.json"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/config.yaml accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/config.yaml"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/package.json accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/package.json"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/composer.json accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/composer.json"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/Gemfile accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/Gemfile"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/requirements.txt accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/requirements.txt"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/.aws/credentials accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/.aws/credentials"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/.aws/config accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/.aws/config"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/server.js accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/server.js"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/app.js accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/app.js"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/id_rsa accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/id_rsa"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/.ssh/id_rsa accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/.ssh/id_rsa"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/.ssh/id_ed25519 accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/.ssh/id_ed25519"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/.gitlab-ci.yml accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/.gitlab-ci.yml"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/.github/workflows accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/.github/workflows"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/docker-compose.yml accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/docker-compose.yml"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/Dockerfile accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/Dockerfile"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/.docker/config.json accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/.docker/config.json"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/.npmrc accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/.npmrc"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/.pypirc accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/.pypirc"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/.travis.yml accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/.travis.yml"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/Jenkinsfile accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/Jenkinsfile"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/phpinfo.php accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/phpinfo.php"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/info.php accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/info.php"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/test.php accessible (200)",
+      "detail": "<!--\n  ~ Copyright (c) 2014-2026 Bjoern Kimminich & the OWASP Juice Shop contributors.\n  ~ SPDX-License-Identifier: MIT\n  -->\n\n<!doctype html>\n<html lang=\"en\" d",
+      "poc": "curl https://juice-shop.herokuapp.com/test.php"
+    },
+    {
+      "module": "exposed",
+      "severity": "CRIT",
+      "title": "/.well-known/security.txt accessible (200)",
+      "detail": "Contact: mailto:donotreply@owasp-juice.shop\nEncryption: https://keybase.io/bkimminich/pgp_keys.asc?fingerprint=19c01cb7157e4645e9e2c863062a85a8cbfbdcda\nAcknowle",
+      "poc": "curl https://juice-shop.herokuapp.com/.well-known/security.txt"
+    },
+    {
+      "module": "ssrf",
+      "severity": "CRIT",
+      "title": "SSRF via param url",
+      "detail": "payload: http://169.254.169.254/latest/meta-data/",
+      "poc": "https://juice-shop.herokuapp.com/?url=http%3A//169.254.169.254/latest/meta-data/"
+    },
+    {
+      "module": "cors",
+      "severity": "HIGH",
+      "title": "CORS wildcard *",
+      "detail": "semua origin boleh baca response",
+      "poc": "Origin: https://evil.com"
+    },
+    {
+      "module": "headers",
+      "severity": "LOW",
+      "title": "HSTS hilang",
+      "detail": "",
+      "poc": ""
+    },
+    {
+      "module": "headers",
+      "severity": "LOW",
+      "title": "CSP hilang (XSS lebih mudah)",
+      "detail": "",
+      "poc": ""
+    },
+    {
+      "module": "headers",
+      "severity": "LOW",
+      "title": "Referrer-Policy hilang (token leak via referrer)",
+      "detail": "",
+      "poc": ""
+    },
+    {
+      "module": "headers",
+      "severity": "LOW",
+      "title": "Permissions-Policy hilang",
+      "detail": "",
+      "poc": ""
+    },
+    {
+      "module": "headers",
+      "severity": "LOW",
+      "title": "Software version exposed: Heroku",
+      "detail": "info disclosure",
+      "poc": ""
+    }
+  ]
+}

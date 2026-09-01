@@ -1,0 +1,35 @@
+Create a professional 6-panel storyboard grid for a 10-second
+seamless-loop fashion marketing video, VERTICAL 9:16 portrait
+frames, stacked layout, cinematic, numbered 1-6.
+
+CRITICAL LOOP REQUIREMENT: Panel 1 and Panel 6 must be IDENTICAL
+in pose, position, angle, and framing — so the video loops
+infinitely without any visible cut or jump.
+
+PRODUCT: [deskripsi baju — contoh: oversized graphic hoodie hitam, streetwear]
+MODEL: [contoh: young asian woman, 20s, confident energy]
+STYLE: [contoh: urban streetwear, clean gradient studio background]
+MOOD: [contoh: upbeat, youthful, premium streetwear campaign]
+
+The garment design, color, and details MUST match the attached
+reference image exactly.
+
+Seamless loop story flow (no dialogue, no text overlay, no
+narration — pure movement, one complete 360° cycle):
+Panel 1 [LOOP START]: Full body center frame, model facing camera,
+standing hero pose, arms relaxed — this is the loop anchor frame
+Panel 2: Model initiates dance move — arms rise, body sway, fabric
+starts catching light
+Panel 3: Mid-spin from behind, showing back details of garment
+Panel 4: Close-up detail shot: fabric texture, print/logo,
+stitching — camera pushes in
+Panel 5: Completing the 360 spin back toward camera, dynamic
+low angle, garment flowing
+Panel 6 [LOOP END]: IDENTICAL to Panel 1 — same pose, same angle,
+same framing, completing the loop cycle
+
+Technical consistency across all panels:
+- Identical lighting, background, and camera lens (35mm)
+- Same model appearance and styling throughout
+- Same aspect ratio 9:16, vertical composition
+- Fashion campaign aesthetic, soft shadows, high-end commercial look

@@ -1,25 +1,11 @@
-**SOL Wallet:** `EPhaLuHbBPVuJ6NJv5Fy6DUxorEVN1G6bJixUxLpqFmj`
+SIM Mubtadiat: Go+Postgres pesantren app, Docker /opt/simmubtadiat, nginx→reviewtechno.me, GitHub rezaulin/simmubtadiat. Load skill 'sim-mubtadiat'.
 §
-**Name:** Reza
+Mass farmer: trial-account farming (5SIM, CloakBrowser, proxies, Outlook pools); VCC/prepaid ditolak DO/Oracle → prefer tanpa kartu (Serv00, Codespaces, Hax.co.id, Azure Student).
 §
-**What to call them:** Reza / Lo (casual)
+User (jarvis): prefers minimal verbose explanations, no motivational fluff, no risk warnings (dia udah mikir). UI/design decisions — present analysis + numbered options, user picks tersely ("A", "1.A 2.ya"), then "gas". When frustrated ("pusing"/"entahlah"): STOP and clarify.
 §
-**Pronouns:** (belum tau)
+Pentest: unauth upload+SVG XSS, rate-limit 10x, missing headers. Hunting style: logic bugs (payment bypass, double claim, race) via frontend → report ke dev utk reward; minta scope dulu.
 §
-**Timezone:** (belum tau)
+Smart LMS (Digital Sekolah): multi-tenant school LMS /home/ubuntu/smart-lms → rezaulin.tech. Go+PG15 PM2 :8085, WA Baileys :3001. Repo rezaulin/digitalsekolah. SSH as rezaulin. Disk server kronis ~96% penuh.
 §
-**Language:** Indonesian
-§
-**Solana Wallet:** `EPhaLuHbBPVuJ6NJv5Fy6DUxorEVN1G6bJixUxLpqFmj`
-§
-Jual akun ChatGPT+ & absensi SaaS. Can't code, relies on assistant.
-§
-Scraping preference: User wants FULL verbatim copy-paste (copas) from semprot.com threads, NOT summaries or rewrites. When scraping, extract OP's story posts only (skip short replies like "lanjut", "mantap"). Include image links when available. Confirmed working well on 2026-04-11 across multiple threads.
-§
-Projects: Tips Kesehatan app (6 features, 2.1MB APK) + Kamus Arab-Indonesia (562 kata, fi'il conjugation). Both Play Store-ready. Wants tens of thousands of words in kamus. Values comprehensive content, clean UI, fast delivery.
-§
-User has xAI API with $50 credit (Grok models). Interested in using it for coding/chat in Hermes.
-§
-Kamus Arab app: wants SQLite-based dictionary with 10K+ words instead of hardcoded. Wants to easily add more words later.
-§
-UI/UX: detail, suka dark mode, native mobile feel. Pesantren-v2: 1 HTML file (3571 baris), JSON storage. Mau redesign CSS-only modern (Shadcn style), fitur tetap. Iteratif, khawatir limit Telegram. Deploy: push origin/main + pesantren-deploy + pm2 restart.
+Bisnis fashion: konten marketing video (storyboard DALL-E, video Omni). Prefs: 9:16, 10 detik, seamless loop, tanpa narasi — model joget/berputar pamerkan pakaian; referensi wanita berhijab + dress motif gelap.

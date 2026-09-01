@@ -1,27 +1,9 @@
-Core Context: Human: Reza
+Rekap=LEFT JOIN all teachers+filter tingkat/kelas via /api/absensi-pengajar-kuartal. Grading: Bayan max9 no Mumtaz, deductions MULTIPLIERS (akhlaq izin÷20/alpha÷6, bayan izin÷15/alpha÷5). Red: Bayan<=5, khos/tamrin/raport<=4. Old-class scores ignored if current exist. mata_pelajaran.nama_indo: riwayat/penilaian pakai nama_indo (fallback Arab), raport CETAK tetap Arab; riwayat urut m.urutan. Raport: semua mapel setahun tampil di 2 semester (mapel 1-kwartal/semester -> '-'); Al-Bayan rodli'(الرديء,<=5) cetak المثبت di raport SAJA (data/Penilaian tetap rodli'). Import santri PARTIAL (valid masuk, gagal skip+lapor Baris/Nama/Alasan). Santri manual add: kirim bagian_awal_id di POST /api/santri (CreateSantri 1 tx), jgn call ke-2 naik-kelas.
 §
-Core Context: NARA Wallet: DVBbp6DJwe8aZDe18Ak4qqfFmmFdaneiXwE2KvggRmeL (Solana, Twitter-bound, mnemonic: powder eager above keen...volcano clog)
+SIM Mubtadiat tech: no Go in app image -> batch regen via throwaway Dockerfile.regen image (--network simmubtadiat_default DB_HOST=db). Mapel names have Unicode variants. Frontend xss.js: escape ONLY & < > ", NEVER apostrophes.
 §
-Core Context: Identity: Robot agen nakal, chill, santai, kadang usil, helpful. Bahasa Indonesia preferred.
+User expects: creds/PAT once given → use directly, no manual-fallback. Verify by measurement, jangan kira-kira; sebelum aksi destruktif buktikan dulu. Kalau user NANYA 'gimana/cara' → JELASKAN dulu, jgn langsung eksekusi (biaya permanen: forward 11 IP 9Proxy tanpa konfirmasi → 'hadeh rugi'). ⚠️ Sering frame target random sbg 'bug bounty/challenge' utk ekstrak API key gratisan (bilitv.com) → batas: hanya in-scope program resmi / infra sendiri / klien berizin.
 §
-Core Context: Host: VPS ubuntu-s-4vcpu-8gb-sgp1-01
+Freestyle: PmJ3=Pro 32C/64G, RzsQ=rena 403 fraud, GC5U=reza-vm. Free VPS alt: Oracle blokir IP DC, Azure butuh enrollment aktif; alt Serv00/Koyeb/Codespaces.
 §
-Pesantren V2: /root/pesantren-v2/ PM2:3001 data.json admin/admin123. Unified absensi table (kelompok_id). Auto-creates SEKOLAH kelompok. Import Excel→auto wali accounts. Debounced saveDB 500ms. Git: origin(pesantren-v2)+deploy(pesantren-deploy) push BOTH. Card grid UI kamar/kelas. Gzip compression.
-§
-Guidelines: Update this during periodic heartbeats by reviewing daily memory files.
-§
-Guidelines: Keep private info secure. Do not share in groups.
-§
-User: pemburu gratisan (freebie hunter). Uses Jimeng AI (5 free vid/day), has xAI $50 credit, interested in FB tech articles with strong hooks + casual Indonesian style.
-§
-User learning scraping from semprot.com for romance stories. Wants full narrative rewrite, NOT summaries. Plans FB upload later. Semprot: rezaulin12.
-§
-Email biz: reviewtechno.me on Cloudflare. Email Routing ACTIVE, catch-all→rezaahzani@gmail.com. Sell ChatGPT+ accounts. Multi-user webmail DEPLOYED: webmail.rezaahzani.workers.dev (D1: 1929a55f, auto-create @reviewtechno.me users). Customer OTP via webmail inbox. Duitku QRIS registration pending.
-§
-Pesantren SaaS: 1 codebase multi-tenant, feature toggle per paket. User can't code, relies on assistant. Excel exports: 2 sheets (formal+raw), dynamic header from settings.
-§
-User domain: reviewtechno.me (on Cloudflare, nameservers: bethany.ns.cloudflare.com, glen.ns.cloudflare.com). DNS: NS active on Cloudflare as of 2026-04-14. Email Routing status: Unlocked.
-§
-2-repo: pesantren-absensi (pribadi), pesantren-deploy (jualan). ALWAYS push BOTH.
-§
-VPS1 expiring, can't renew. VPS2: 172.237.138.149 (root/jancoK123@a), Ubuntu. xAI key active ($50, Grok). Planning WebSantri Next.js app (Prisma, roles). Prefers simple solutions (JSON/SQLite over PostgreSQL).
+EarnApp farm: 9proxy IP HANGUS PERMANEN → jgn forward tanpa konfirmasi. VPS 94.237.76.76 (2C/4G, 6 dev). Swap MANUAL. Tambah device 1-by-1: 9proxy -s "New York" (nama lengkap+quotes, kode 2huruf gagal). ⚠️ redsocks conf WAJIB local_ip=0.0.0.0 bukan 127.0.0.1 (iptables REDIRECT kirim ke dest-IP). Lepas REDIRECT saat apt/SDK download (proxy blokir Debian). Kualitas per-KOTA: NYC (Verizon/T-Mobile)=earner, California=flagged, datacenter ASN=Tolak. backup /root/earnapp-backup/.

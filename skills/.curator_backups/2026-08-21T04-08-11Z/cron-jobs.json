@@ -1,0 +1,51 @@
+{
+  "jobs": [
+    {
+      "id": "1a122e0baf26",
+      "name": "degen-dash solana scan + push",
+      "prompt": "Solana meme scanner + notif Telegram",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "degen-notify.sh",
+      "no_agent": true,
+      "context_from": null,
+      "schedule": {
+        "kind": "cron",
+        "expr": "*/15 * * * *",
+        "display": "*/15 * * * *"
+      },
+      "schedule_display": "*/15 * * * *",
+      "repeat": {
+        "times": null,
+        "completed": 638
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-14T08:40:36.677326+08:00",
+      "next_run_at": "2026-08-21T12:15:00+08:00",
+      "last_run_at": "2026-08-21T12:00:44.331764+08:00",
+      "last_status": "error",
+      "last_error": "Script exited with code 1\nstderr:\n/root/.hermes/scripts/degen-notify.sh: line 3: cd: /root/degen-dash: No such file or directory",
+      "last_delivery_error": null,
+      "deliver": "local",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "1689639544",
+        "chat_name": "reza",
+        "thread_id": null,
+        "user_id": "1689639544"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "fire_claim": null
+    }
+  ],
+  "updated_at": "2026-08-21T12:00:44.332080+08:00"
+}
