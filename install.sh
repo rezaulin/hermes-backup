@@ -16,14 +16,25 @@ echo "📦 Installing system dependencies..."
 apt-get update -qq && apt-get install -y -qq python3 python3-pip python3-venv git curl ffmpeg 2>/dev/null
 echo "  ✅ System deps"
 
-# ─── 2. Install Hermes Agent (official installer) ───
-if ! command -v hermes &> /dev/null; then
+# ─── 2. Install Hermes Agent (from bundled source, NOT latest) ───
+if [ ! -x /usr/local/lib/hermes-agent/venv/bin/hermes ]; then
     echo ""
-    echo "📥 Installing Hermes Agent (official)..."
-    curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash 2>&1 | tail -2
-    echo "  ✅ Hermes Agent installed"
+    echo "📦 Extracting Hermes source (v0.18.0, bundled)..."
+    mkdir -p /usr/local/lib/hermes-agent
+    tar -xzf "$BACKUP_DIR/hermes-src.tar.gz" -C /usr/local/lib/hermes-agent 2>/dev/null
+    echo "  ✅ Source extracted"
+    echo ""
+    echo "🐍 Building venv + deps (bisa 5-10 menit)..."
+    cd /usr/local/lib/hermes-agent
+    python3 -m venv venv
+    ./venv/bin/pip install -q -e . 2>/dev/null || ./venv/bin/pip install -q -r requirements.txt 2>/dev/null || ./venv/bin/pip install -q .
+    echo "  ✅ Python deps"
+    echo ""
+    echo "📦 npm install (node_modules)..."
+    npm install --silent 2>/dev/null || echo "  ⚠️  npm skipped"
+    ln -sf /usr/local/lib/hermes-agent/venv/bin/hermes /usr/local/bin/hermes
+    echo "  ✅ hermes command linked"
 else
-    echo ""
     echo "  ℹ️  Hermes already installed, skipping"
 fi
 
