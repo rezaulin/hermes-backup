@@ -16,34 +16,18 @@ echo "📦 Installing system dependencies..."
 apt-get update -qq && apt-get install -y -qq python3 python3-pip python3-venv git curl ffmpeg 2>/dev/null
 echo "  ✅ System deps"
 
-# ─── 2. Clone hermes-agent ───
-if [ ! -d "$HOME/hermes-agent" ]; then
+# ─── 2. Install Hermes Agent (official installer) ───
+if ! command -v hermes &> /dev/null; then
     echo ""
-    echo "📥 Cloning hermes-agent..."
-    git clone https://github.com/anthropics/hermes-agent.git "$HOME/hermes-agent" 2>/dev/null || \
-    git clone https://github.com/user/hermes-agent.git "$HOME/hermes-agent" 2>/dev/null || \
-    echo "  ⚠️  Clone hermes-agent manually: git clone <repo-url> ~/hermes-agent"
-    if [ -d "$HOME/hermes-agent" ]; then
-        echo "  ✅ hermes-agent cloned"
-    fi
+    echo "📥 Installing Hermes Agent (official)..."
+    curl -fsSL https://hermes-agent.nousresearch.com/install.sh | bash 2>&1 | tail -2
+    echo "  ✅ Hermes Agent installed"
 else
     echo ""
-    echo "  ℹ️  hermes-agent already exists, pulling latest..."
-    cd "$HOME/hermes-agent" && git pull 2>/dev/null || true
-    echo "  ✅ hermes-agent updated"
+    echo "  ℹ️  Hermes already installed, skipping"
 fi
 
-# ─── 3. Python venv ───
-if [ -d "$HOME/hermes-agent" ] && [ ! -d "$HOME/hermes-agent/venv" ]; then
-    echo ""
-    echo "🐍 Setting up Python venv..."
-    cd "$HOME/hermes-agent"
-    python3 -m venv venv
-    source venv/bin/activate
-    pip install -q -r requirements.txt 2>/dev/null || pip install -q openai anthropic prompt_toolkit rich pyyaml 2>/dev/null
-    deactivate
-    echo "  ✅ Python venv ready"
-fi
+# ─── 3. venv diurus installer resmi (lewati) ───
 
 # ─── 4. Create hermes dir ───
 mkdir -p "$HERMES_DIR"
@@ -86,23 +70,7 @@ elif [ -f "$HERMES_DIR/.env" ]; then
     echo "  ℹ️  .env already exists, skipping"
 fi
 
-# ─── 7. Symlink hermes command ───
-if [ -d "$HOME/hermes-agent" ]; then
-    # Try to find the entry point
-    if [ -f "$HOME/hermes-agent/cli.py" ]; then
-        chmod +x "$HOME/hermes-agent/cli.py" 2>/dev/null
-        # Create wrapper
-        cat > /usr/local/bin/hermes << 'WRAPPER'
-#!/bin/bash
-cd "$HOME/hermes-agent"
-source venv/bin/activate 2>/dev/null
-python3 cli.py "$@"
-WRAPPER
-        chmod +x /usr/local/bin/hermes
-        echo ""
-        echo "  ✅ 'hermes' command installed"
-    fi
-fi
+# ─── 7. 'hermes' command already installed by official installer ───
 
 # ─── 8. Auth setup ───
 echo ""
